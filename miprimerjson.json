@@ -1,0 +1,90 @@
+{
+  "ciudad": "Bogota",
+  "sitiosFavoritos": [
+    {
+      "nombre": "Puente de Boyaca",
+      "ubicacion": "Tunja",
+      "descripcion": "Visitamos el monumento historico",
+      "valorVisita": 80000
+    },
+    {
+      "nombre": "Villa de Leyva",
+      "ubicacion": "Villa de Leyva",
+      "descripcion": "Pueblo colonial",
+      "valorVisita": 200000
+    },
+    {
+      "nombre": "Pantano de Vargas",
+      "ubicacion": "Paipa",
+      "descripcion": "Monumento batalla del pantano",
+      "valorVisita": 100000
+    }
+  ],
+  "fechaNacimiento": "1990-07-01",
+  "comidaFavorita": "Pasta",
+  "viajes": [
+    {
+      "nombre": "Europa",
+      "ubicacion": "España",
+      "descripcion": "Visita estadio Bernabeu",
+      "valorVisita": 800000
+    }
+  ],
+  "colores": ["azul", "rojo", "verde"],
+  "colorFavorito": "azul",
+  "razas": [
+    {
+      "nombre": "Raza1"
+    },
+    {
+      "nombre": "Raza2"
+    },
+    {
+      "nombre": "Raza3"
+    },
+    {
+      "nombre": "Raza4"
+    },
+    {
+      "nombre": "Raza5"
+    },
+    {
+      "nombre": "Raza6"
+    },
+    {
+      "nombre": "Raza7"
+    },
+    {
+      "nombre": "Raza8"
+    },
+    {
+      "nombre": "Raza9"
+    },
+    {
+      "nombre": "Raza10"
+    },
+    {
+      "nombre": "Raza11"
+    },
+    {
+      "nombre": "Raza12"
+    },
+    {
+      "nombre": "Raza13"
+    }
+  ],
+  "cantidadGatos": [
+    {
+      "raza": "Bali",
+      "cantidad": 3
+    },
+    {
+      "raza": "Razi2",
+      "cantidad": 4
+    },
+    {
+      "raza": "Raza3",
+      "cantidad": 8
+    }
+  ]
+}

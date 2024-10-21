@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Inventario de Productos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>jorge armando rodriguez suarez</h1>
+
+    <!-- Primera tabla de inventario -->
+    <table border="3">
+        <caption>Inventario de Productos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody id="inventario-body">
+            <tr>
+                <td scope="row">Flor Huila</td>
+                <td scope="row">Arroz</td>
+                <td scope="row">10</td>
+                <td scope="row">$15.000</td>
+                <td scope="row">$150.000</td>
+            </tr>
+            <tr>
+                <td scope="row">Pastusa</td>
+                <td scope="row">Papa</td>
+                <td scope="row">5</td>
+                <td scope="row">$7.000</td>
+                <td scope="row">$35.000</td>
+            </tr>
+            <tr>
+                <td scope="row">Res</td>
+                <td scope="row">Carne</td>
+                <td scope="row">10</td>
+                <td scope="row">$20.000</td>
+                <td scope="row">$200.000</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">Total</th>
+                <td scope="row">25</td>
+                <td scope="row">$42.000</td>
+                <td scope="row">$385.000</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!-- Segunda tabla con solo categorías -->
+    <table border="1">
+        <caption>Información de Productos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Cantidad</th>
+            </tr>
+        </thead>
+    </table>
+
+    <br>
+
+    <!-- Formulario para agregar productos -->
+    <form action="/agregar" method="post">
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Nombre de producto</th>
+                    <th>Tipo de categoría</th>
+                    <th>Cantidad de producto</th>
+                    <th>Precio de producto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="nombre" name="nombre" required /></td>
+                    <td>
+                        <select name="categoria" id="categoria">
+                            <option value="">--Categoría--</option>
+                            <option value="1">Arroz</option>
+                            <option value="2">Papa</option>
+                            <option value="3">Carne</option>
+                        </select>
+                    </td>
+                    <td><input type="number" id="cantidad" name="cantidad" required /></td>
+                    <td><input type="number" id="precio" name="precio" required /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Observaciones</td>
+                    <td colspan="2" align="center">
+                        <textarea rows="5" placeholder="Escribe tus comentarios" id="observaciones"
+                            cols="35"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">
+                        <input type="button" onclick="agregarProducto()" value="Agregar Producto">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </form>
+
+    <script src="inventory.js"></script>
+</body>
+
+</html>
